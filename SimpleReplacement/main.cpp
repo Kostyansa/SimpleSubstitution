@@ -130,6 +130,7 @@ int main(int argc, const char * argv[]) {
             case 1:{
                 std::cout << "Input message" << std::endl;
                 std::string message;
+                std::cin.ignore();
                 std::getline(std::cin, message);
                 std::transform(message.begin(), message.end(), message.begin(), ::toupper);
                 std::cout << "Input key(26 symbol alphabet)" << std::endl;
@@ -141,8 +142,9 @@ int main(int argc, const char * argv[]) {
                 break;
             }
             case 2:{
-                std::cout << "Input message" << std::endl;
+                std::cout << "Input message: " << std::endl;
                 std::string message;
+                std::cin.ignore();
                 std::getline(std::cin, message);
                 std::transform(message.begin(), message.end(), message.begin(), ::toupper);
                 std::cout << "Input key(26 symbol alphabet)" << std::endl;
@@ -154,8 +156,9 @@ int main(int argc, const char * argv[]) {
                 break;
             }
             case 3:{
-                std::cout << "Input message" << std::endl;
+                std::cout << "Input message: " << std::endl;
                 std::string message;
+                std::cin.ignore();
                 std::getline(std::cin, message);
                 std::transform(message.begin(), message.end(), message.begin(), ::toupper);
                 std::vector<std::string> possible = Analyze(message);
